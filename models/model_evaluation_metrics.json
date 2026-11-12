@@ -1,0 +1,94 @@
+{
+    "feature_names": [
+        "Amount",
+        "log_amount",
+        "tx_hour",
+        "tx_dayofweek",
+        "is_weekend",
+        "location_rarity",
+        "sender_pagerank",
+        "sender_betweenness_centrality",
+        "sender_in_degree",
+        "sender_out_degree",
+        "sender_degree_ratio",
+        "sender_is_in_cycle",
+        "sender_in_cycle_count",
+        "sender_turnover_balance_ratio",
+        "sender_is_mule_heuristic",
+        "receiver_pagerank",
+        "receiver_betweenness_centrality",
+        "receiver_in_degree",
+        "receiver_out_degree",
+        "receiver_degree_ratio",
+        "receiver_is_in_cycle",
+        "receiver_in_cycle_count",
+        "receiver_turnover_balance_ratio",
+        "receiver_is_mule_heuristic",
+        "same_community",
+        "both_in_cycle",
+        "either_mule_flag",
+        "amount_to_sender_outflow_ratio",
+        "amount_to_receiver_inflow_ratio",
+        "pagerank_difference",
+        "betweenness_sum",
+        "gnn_cosine_similarity",
+        "gnn_euclidean_distance",
+        "gnn_dot_product",
+        "gnn_sender_norm",
+        "gnn_receiver_norm"
+    ],
+    "xgb_metrics": {
+        "ROC_AUC": 0.9989,
+        "PR_AUC": 0.9887,
+        "Precision": 0.982,
+        "Recall": 0.9561,
+        "F1_Score": 0.9689,
+        "Confusion_Matrix": [
+            [
+                2398,
+                2
+            ],
+            [
+                5,
+                109
+            ]
+        ]
+    },
+    "rf_metrics": {
+        "ROC_AUC": 0.9975,
+        "PR_AUC": 0.9841,
+        "Precision": 0.982,
+        "Recall": 0.9561,
+        "F1_Score": 0.9689,
+        "Confusion_Matrix": [
+            [
+                2398,
+                2
+            ],
+            [
+                5,
+                109
+            ]
+        ]
+    },
+    "top_features": {
+        "log_amount": 0.4145428240299225,
+        "Amount": 0.28239887952804565,
+        "amount_to_sender_outflow_ratio": 0.08084284514188766,
+        "receiver_out_degree": 0.016331186518073082,
+        "amount_to_receiver_inflow_ratio": 0.014553191140294075,
+        "sender_turnover_balance_ratio": 0.014214366674423218,
+        "sender_in_degree": 0.013198835775256157,
+        "betweenness_sum": 0.01253530289977789,
+        "gnn_sender_norm": 0.011884967796504498,
+        "tx_dayofweek": 0.011522892862558365,
+        "receiver_betweenness_centrality": 0.011172214522957802,
+        "gnn_receiver_norm": 0.010981538332998753,
+        "sender_out_degree": 0.00963243842124939,
+        "gnn_cosine_similarity": 0.009498490951955318,
+        "gnn_euclidean_distance": 0.009161554276943207,
+        "sender_pagerank": 0.008685177192091942,
+        "sender_degree_ratio": 0.008595327846705914,
+        "receiver_pagerank": 0.008495601825416088
+    }
+}
